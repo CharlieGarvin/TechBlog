@@ -27,7 +27,7 @@ router.get('/', async (req, res) => {
   
   router.get('/newPost', withAuth, (req, res) => {
     // If the user is already logged in, redirect the request to another route
-      res.render('/newPost');
+      res.render('newPost');
   });
 
   router.get('/edit/:id', withAuth, async (req, res) => {
