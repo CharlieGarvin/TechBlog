@@ -2,8 +2,8 @@ const editPostFormHandler = async (event) => {
     event.preventDefault();
     console.log('posting');
 
-    const title = document.querySelector('#title-post').ariaValueMax.value();
-    const body = document.querySelector('#body-post').ariaValueMax.value();
+    const title = document.querySelector('input[name="post-title"]').value;
+    const body = document.querySelector('textarea[name="post-body"]').value;
 
     if (title && body) {
             const response = await fetch('/api/posts/', {
