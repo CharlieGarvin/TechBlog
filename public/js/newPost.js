@@ -2,9 +2,8 @@ const editPostFormHandler = async (event) => {
     event.preventDefault();
     console.log('posting');
 
-    // collect values from the login form
-    const title = document.querySelector('#title-post').ariaValueMax.trim();
-    const body = document.querySelector('#body-post').ariaValueMax.trim();
+    const title = document.querySelector('#title-post').ariaValueMax.value();
+    const body = document.querySelector('#body-post').ariaValueMax.value();
 
     if (title && body) {
             const response = await fetch('/api/posts/', {
