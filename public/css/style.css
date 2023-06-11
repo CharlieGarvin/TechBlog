@@ -21,6 +21,10 @@ nav:hover {
     color: white;
 }
 
+#border {
+    border: 3px solid black;
+}
+
 div {
     display: flex;
     flex-direction: column;
