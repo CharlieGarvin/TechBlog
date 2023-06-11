@@ -23,6 +23,7 @@ nav:hover {
 
 .border {
     border: 3px solid black;
+    padding: 5px;
 }
 
 div {
